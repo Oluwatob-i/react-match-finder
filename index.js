@@ -2,7 +2,7 @@ function getMatches(searchInput, array, matchPercent=50) {
     return array.filter(
          (item) => {
              let splitItem = item.toLowerCase().split(' ');
-             if (searchInput.includes(item) || (function() {
+             if (searchInput.toLowerCase().includes(item.toLowerCase()) || (function() {
                  // an immediately invoked  function that checks if searchInput contains item 
                  // convert searchInput to lower case and split searchInput  
                  let _search = searchInput.toLowerCase().split(' ');
