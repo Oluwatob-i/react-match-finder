@@ -1,0 +1,26 @@
+{
+  "name": "react-match-finder",
+  "version": "1.0.1",
+  "description": "Match finder is a function that takes in a search input and an array to search and returns an array of matches.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Oluwatob-i/react-match-finder.git"
+  },
+  "keywords": [
+    "react",
+    "search",
+    "filter",
+    "match",
+    "finder"
+  ],
+  "author": "Femi Oluwatobi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Oluwatob-i/react-match-finder/issues"
+  },
+  "homepage": "https://github.com/Oluwatob-i/react-match-finder#readme"
+}
