@@ -1,6 +1,6 @@
 {
   "name": "react-match-finder",
-  "version": "1.0.1",
+  "version": "1.0.10",
   "description": "Match finder is a function that takes in a search input and an array to search and returns an array of matches.",
   "main": "index.js",
   "scripts": {
@@ -22,5 +22,6 @@
   "bugs": {
     "url": "https://github.com/Oluwatob-i/react-match-finder/issues"
   },
-  "homepage": "https://github.com/Oluwatob-i/react-match-finder#readme"
+  "homepage": "https://github.com/Oluwatob-i/react-match-finder#readme",
+  "type": "module"
 }
