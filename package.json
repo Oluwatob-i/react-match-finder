@@ -1,6 +1,6 @@
 {
   "name": "react-match-finder",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "description": "Match finder is a function that takes in a search input and an array to search and returns an array of matches.",
   "main": "index.js",
   "scripts": {
