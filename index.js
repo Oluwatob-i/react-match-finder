@@ -1,16 +1,16 @@
 function getMatches(searchInput, array, matchPercent=50) {
     return array.filter(
          (item) => {
-             let _item = item.toLowerCase()
+             let splitItem = item.toLowerCase().split(' ');
              if (searchInput.includes(item) || (function() {
                  // an immediately invoked  function that checks if searchInput contains item 
                  // convert searchInput to lower case and split searchInput  
                  let _search = searchInput.toLowerCase().split(' ');
                  // split item
-                 item = item.toLowerCase().split(' ');
+                
                  // iterate over a item filter that returns a non empty array for each item in item 
                  // if searchInput match item by
-                  for (let i of item.filter(
+                  for (let i of splitItem.filter(
                      _item => (
                          // immediately invoked 
                          function (){
@@ -28,7 +28,7 @@ function getMatches(searchInput, array, matchPercent=50) {
                                  for (let _ of i) {       
                                      // iterate over each letter in i
                                      // if item doesnt include that letter 
-                                     // subtract p from match                    
+                                     // subtract p from match `                   
                                      if (!_item.includes(_))
                                           match = match - p;
                                      if(_item.indexOf(_) !== i.indexOf(_))
