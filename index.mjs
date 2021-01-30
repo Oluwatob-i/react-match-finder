@@ -72,4 +72,3 @@ function getMatches(searchInput, array, matchPercent=50) {
  }
 
  export default getMatches;
- console.log(getMatches('test', ['test', 'testing', 'tester'], 50))
