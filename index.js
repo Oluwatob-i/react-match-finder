@@ -106,5 +106,7 @@ function getMatches(searchInput, array, matchPercent=50) {
      )
  }
 
- export default getMatches;
+ module.exports = {
+     getMatches
+ }
 
