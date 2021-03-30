@@ -24,7 +24,7 @@ function getMatches(searchInput, array, matchPercent=50) {
                             a.push(item.toString())
                         }
                         else if (typeof item == 'string')
-                            a.push(item)
+                            a = [...a, ...item.toLowerCase().split(' ')]
                         else if (item instanceof  Array) {
                             item.map(
                                 i =>  handleType(i)
@@ -95,7 +95,10 @@ function getMatches(searchInput, array, matchPercent=50) {
                              }
                      }())                      
                  )) {
-                     if (i.length) return 'match found';
+                     if (i.length) {
+
+                        return 'match found';
+                     }
                  }
              } ())) {
 
@@ -106,7 +109,4 @@ function getMatches(searchInput, array, matchPercent=50) {
      )
  }
 
- module.exports = {
-     getMatches
- }
-
+ module.exports = getMatches;
